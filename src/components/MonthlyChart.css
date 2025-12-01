@@ -1,0 +1,81 @@
+.monthly-chart {
+  padding: 1rem 0;
+}
+
+.chart-bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: 200px;
+  margin-bottom: 1rem;
+  gap: 8px;
+}
+
+.chart-bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 8px;
+}
+
+.bar-container {
+  display: flex;
+  align-items: end;
+  gap: 2px;
+  height: 100%;
+  width: 100%;
+  max-width: 40px;
+}
+
+.bar {
+  flex: 1;
+  border-radius: 2px 2px 0 0;
+  transition: all 0.3s ease;
+  min-height: 4px;
+}
+
+.income-bar {
+  background: linear-gradient(to top, #10b981, #34d399);
+}
+
+.expense-bar {
+  background: linear-gradient(to top, #ef4444, #f87171);
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.month-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.income-color {
+  background: #10b981;
+}
+
+.expense-color {
+  background: #ef4444;
+}
